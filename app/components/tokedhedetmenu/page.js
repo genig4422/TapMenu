@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function MenuWithFixedButtons() {
   const categories = ["Supa","Sallata","Antipasta","Pasta","Rizoto","Peshk", "Mish", "Verat","Kokteile","Alkolike","Birra","Pije","Kafe"];
+ 
 
   const content = {
     Kokteile:[
