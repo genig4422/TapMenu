@@ -1,9 +1,9 @@
 "use client"
 import Image from "next/image";
-import MenuWithFixedButtons from "../components/tokedhedetmenu1/page";
+import MenuWithFixedButtons1 from "../components/tokedhedetmenu/page";
 import Head from "next/head";
 
-export default function TokeDheDet1(){
+export default function TokeDheDet(){
 
 
         const handleCall = () => {
@@ -42,7 +42,15 @@ export default function TokeDheDet1(){
         <p className="text-2xl font-bold">Tap Menu</p>
         <div>
             <p className="py-2 ml-6 rounded-lg hidden px-5 bg-green-600 md:hidden inline-block">Shqip</p>
-            
+            <button onClick={handleCall} className="py-2 ml-6 hidden rounded-lg px-5 bg-green-600 md:inline-block">
+                Porosit Online
+            </button>
+            <button
+                onClick={handleCall}
+                className="fixed w-80 bottom-4 z-50 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-lg md:hidden"
+            >
+                Porosit Online Tani
+            </button>
         </div>
     </div>
 
@@ -79,7 +87,7 @@ export default function TokeDheDet1(){
     </div>
 </div>
 
-            <MenuWithFixedButtons></MenuWithFixedButtons>
+            <MenuWithFixedButtons1></MenuWithFixedButtons1>
 
 
 

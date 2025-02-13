@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 
-export default function MenuWithFixedButtons() {
-  const categories = ["Supa","Sallata","Antipasta","Pasta","Rizoto","Peshk", "Mish","Kokteile", "Verat","Alkolike","Birra","Pije","Kafe"];
+export default function MenuWithFixedButtonsOnline() {
+  const categories = ["Kokteile","Supa","Sallata","Antipasta","Pasta","Rizoto","Peshk", "Mish", "Verat","Alkolike","Birra","Pije","Kafe"];
  
 
   const content = {
@@ -27,15 +27,15 @@ export default function MenuWithFixedButtons() {
         {price: "300L", name: "Brusketa",  image: "/tokedhedet/Supe-me-perime.jpg"},
         {price: "550L", name: "Karkalec Pana",  image: "/tokedhedet/brusketa.jpg"},
         {price: "200L", name: "Patate te Skuqura",  image: "/tokedhedet/patate-te-skuqura.jpg"},
-        {price: "1800L", name: "Karkalec Friture 1 kg",  image: "/tokedhedet/karkalec-friture].jpg"},
-        {price: "1800L", name: "Kallamar Friture 1 kg",  image: "/tokedhedet/kallamar-friture.jpg"},
-        {price: "1800L", name: "Mix Fritur 1 kg",  image: "/tokedhedet/mix-friture.jpg"}
+        {price: "2400L", name: "Karkalec Friture 1 kg",  image: "/tokedhedet/karkalec-friture].jpg"},
+        {price: "2400L", name: "Kallamar Friture 1 kg",  image: "/tokedhedet/kallamar-friture.jpg"},
+        {price: "2400L", name: "Mix Fritur 1 kg",  image: "/tokedhedet/mix-friture.jpg"}
     ],
     Pasta:[
         {price: "300L", name: "Aglio Olio Peperonchino",  image: "/tokedhedet/pene-ton-ullinj.jpg"},
         {price: "500L", name: "Linguini Fruta Deti",  image: "/tokedhedet/linguini-fruta-deti.jpg"},
         {price: "600L", name: "Linguini Karkalec Kungull",  image: "/tokedhedet/linguini-karkalec-kungull.jpg"},
-        {price: "300L", name: "Pene Arabiata",  image: "/tokedhedet/pene-arabiata.jpg"},
+        {price: "350L", name: "Pene Arabiata",  image: "/tokedhedet/pene-arabiata.jpg"},
         {price: "400L", name: "Pene Ton & Ullinj",  image: "/tokedhedet/pene-ton-ullinj.jpg"},
         {price: "500L", name: "Pene Ragu",  image: "/tokedhedet/pene-ton-ullinj.jpg"}
     ],
@@ -45,17 +45,17 @@ export default function MenuWithFixedButtons() {
         {price: "400L", name: "Rizoto Perime",  image: "/tokedhedet/rizoto-perime.jpg"}
     ],
     Peshk: [
-      { price: "1500L", name: "Levrek Zgare 1 kg",  image: "/tokedhedet/levrek-zgare.jpg" },
-      { price: "1400L", name: "Koc Zgare 1 kg",  image: "/tokedhedet/koc-zgare.jpg" },
-      {price: "1800L", name: "Karkalec Zgare 1 kg" ,  image: "/tokedhedet/karkalec-zgare.jpg"},
-      {price: "1800L", name: "Kallamar Zgare 1 kg",  image: "/tokedhedet/kallamar-zgare.png"},
+      { price: "800L", name: "Levrek Zgare 350 - 450 gr",  image: "/tokedhedet/levrek-zgare.jpg" },
+      { price: "750L", name: "Koce Zgare 350 - 450 gr",  image: "/tokedhedet/koc-zgare.jpg" },
+      {price: "2400L", name: "Karkalec Zgare 1 kg" ,  image: "/tokedhedet/karkalec-zgare.jpg"},
+      {price: "2400L", name: "Kallamar Zgare 1 kg",  image: "/tokedhedet/kallamar-zgare.png"},
       {price: "1000L", name: "Oktapod Zgare",  image: "/tokedhedet/oktapod-zgare.jpg"},
-      {price: "1800L", name: "Mix Zgare 1 kg",  image: "/tokedhedet/mix-zgare.jpg"}
+      {price: "2400L", name: "Mix Zgare 1 kg",  image: "/tokedhedet/mix-zgare.jpg"}
     ],
     Mish: [
-      { price: "2000L", name: "Brinje Qingji 1 kg",  image: "/tokedhedet/Brinje-qingji.jpg" },
-      { price: "700L", name: "Biftek Viçi",  image: "/tokedhedet/biftek-vici.jpg" },
-      {price: "400L", name: "Pule Kotolet",  image: "/tokedhedet/kotoleta-pule.jpg"},
+      { price: "2400L", name: "Brinje Qingji 1 kg",  image: "/tokedhedet/Brinje-qingji.jpg" },
+      { price: "750L", name: "Biftek Viçi",  image: "/tokedhedet/biftek-vici.jpg" },
+      {price: "600L", name: "Pule Kotolet",  image: "/tokedhedet/kotoleta-pule.jpg"},
       {price: "2500L", name: "Pule me Jufka",  image: "/tokedhedet/pule-jufka.jpg"},
       {price: "2500L", name: "Pule me Pilaf",  image: "/tokedhedet/pule-pilaf.jpg"}
     ],
@@ -69,7 +69,6 @@ export default function MenuWithFixedButtons() {
       {price: "2000L", name: "Valpolicella",  image: "/tokedhedet/s2/valpolicella.jpg"},
       {price: "700L", name: "Vere e Hapur 1L",  image: "/tokedhedet/s2/vere-kane.jpg"},
       {price: "200L", name: "Vere me Gote",  image: "/tokedhedet/s2/vere-gote.jpg"},
-      
       
       
     ],
