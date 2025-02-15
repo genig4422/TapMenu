@@ -131,15 +131,28 @@ export default function MenuWithFixedButtons() {
   };
 
   const [activeCategory, setActiveCategory] = useState(categories[0]);
-  
+  const [preloadedImages, setPreloadedImages] = useState([]);
+
+  useEffect(() => {
+    // Preload images for the active category
+    const imagesToPreload = content[activeCategory].map(item => item.image);
+    const imagePromises = imagesToPreload.map(src => {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = resolve;
+      });
+    });
+
+    Promise.all(imagePromises).then(() => {
+      setPreloadedImages(imagesToPreload);
+    });
+  }, [activeCategory]);
 
   return (
     <div className="relative mb-16">
-     
       {/* Category Menu */}
-      <div
-       className="w-full md:px-4 px-3 pt-4 text-white shadow-lg overflow-x-auto whitespace-nowrap flex space-x-2 p-2 snap-x snap-mandatory"
-      >
+      <div className="w-full md:px-4 px-3 pt-4 text-white shadow-lg overflow-x-auto whitespace-nowrap flex space-x-2 p-2 snap-x snap-mandatory">
         {categories.map((category) => (
           <button
             key={category}
@@ -156,18 +169,19 @@ export default function MenuWithFixedButtons() {
       </div>
 
       {/* Menu Content (Only show selected category) */}
-      <div className="pt-3 p-4 text-gray-700  dark:text-gray-300">
+      <div className="pt-3 p-4 text-gray-700 dark:text-gray-300">
         <h2 className="text-2xl font-semibold mb-4">{activeCategory}</h2>
-        <div className="grid gap-4  md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {content[activeCategory].map((item, index) => (
-            <div key={index} className=" bg-gray-500 bg-opacity-25 rounded-lg p-4 ">
+            <div key={index} className="bg-gray-500 bg-opacity-25 rounded-lg p-4">
               <img
-                src={item.image}
+                src={preloadedImages.includes(item.image) ? item.image : '/path/to/placeholder.jpg'} // Use a placeholder while loading
                 alt={item.name}
+                loading="lazy" // Lazy load the image
                 className="w-full h-64 object-cover rounded-md mb-2"
               />
               <h3 className="text-lg font-semibold">{item.name}</h3>
-              <p className="text-md ">{item.price}</p>
+              <p className="text-md">{item.price}</p>
             </div>
           ))}
         </div>
