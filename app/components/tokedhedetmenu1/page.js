@@ -129,62 +129,87 @@ export default function MenuWithFixedButtonsOnline() {
     ]
   };
 
-  const [activeCategory, setActiveCategory] = useState(categories[0]);
-  const [preloadedImages, setPreloadedImages] = useState([]);
-
-  useEffect(() => {
-    // Preload images for the active category
-    const imagesToPreload = content[activeCategory].map(item => item.image);
-    const imagePromises = imagesToPreload.map(src => {
-      return new Promise((resolve) => {
-        const img = new Image();
-        img.src = src;
-        img.onload = resolve;
-      });
-    });
-
-    Promise.all(imagePromises).then(() => {
-      setPreloadedImages(imagesToPreload);
-    });
-  }, [activeCategory]);
-
-  return (
-    <div className="relative mb-16">
-      {/* Category Menu */}
-      <div className="w-full md:px-4 px-3 pt-4 text-white shadow-lg overflow-x-auto whitespace-nowrap flex space-x-2 p-2 snap-x snap-mandatory">
-        {categories.map((category) => (
-          <button
-            key={category}
-            onClick={() => setActiveCategory(category)}
-            className={`px-4 py-2 rounded-lg transition-all ${
-              activeCategory === category
-                ? "bg-blue-600 text-white"
-                : "bg-gray-700 hover:bg-gray-600"
-            }`}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
-
-      {/* Menu Content (Only show selected category) */}
-      <div className="pt-3 p-4 text-gray-700 dark:text-gray-300">
-        <h2 className="text-2xl font-semibold mb-4">{activeCategory}</h2>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {content[activeCategory].map((item, index) => (
-            <div key={index} className="bg-gray-500 bg-opacity-25 rounded-lg p-4">
-              <img
-                src={preloadedImages.includes(item.image) ? item.image : '/path/to/placeholder.jpg'} // Use a placeholder while loading
-                alt={item.name}
-                loading="lazy" // Lazy load the image
-                className="w-full h-64 object-cover rounded-md mb-2"
-              />
-              <h3 className="text-lg font-semibold">{item.name}</h3>
-              <p className="text-md">{item.price}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+ const [activeCategory, setActiveCategory] = useState(categories[0]);
+   const [debouncedCategory, setDebouncedCategory] = useState(activeCategory);
+   const [isLoading, setIsLoading] = useState(true);
+ 
+   // Preload images
+   useEffect(() => {
+     categories.forEach((category) => {
+       content[category].forEach((item) => {
+         const img = new Image();
+         img.src = item.image;
+       });
+     });
+   }, []);
+ 
+   // Debounce category switching
+   useEffect(() => {
+     setIsLoading(true);
+     const handler = setTimeout(() => {
+       setDebouncedCategory(activeCategory);
+       setIsLoading(false);
+     }, 300); // Adjust debounce delay as needed
+ 
+     return () => clearTimeout(handler);
+   }, [activeCategory]);
+ 
+   // Memoized content rendering
+   const MemoizedContent = useMemo(() => {
+     return (
+       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+         {content[debouncedCategory].map((item, index) => (
+           <div key={index} className="bg-gray-500 bg-opacity-25 rounded-lg p-4">
+             <img
+               src={item.image}
+               alt={item.name}
+               className="w-full h-64 object-cover rounded-md mb-2"
+               loading="lazy"
+             />
+             <h3 className="text-lg font-semibold">{item.name}</h3>
+             <p className="text-md">{item.price}</p>
+           </div>
+         ))}
+       </div>
+     );
+   }, [debouncedCategory]);
+ 
+   return (
+     <div className="relative mb-16">
+       {/* Category Menu */}
+       <div className="w-full md:px-4 px-3 pt-4 text-white shadow-lg overflow-x-auto whitespace-nowrap flex space-x-2 p-2 snap-x snap-mandatory">
+         {categories.map((category) => (
+           <button
+             key={category}
+             onClick={() => setActiveCategory(category)}
+             className={`px-4 py-2 rounded-lg transition-all ${
+               activeCategory === category
+                 ? "bg-blue-600 text-white"
+                 : "bg-gray-700 hover:bg-gray-600"
+             }`}
+           >
+             {category}
+           </button>
+         ))}
+       </div>
+ 
+       {/* Menu Content */}
+       <div className="pt-3 p-4 text-gray-700 dark:text-gray-300">
+         <h2 className="text-2xl font-semibold mb-4">{debouncedCategory}</h2>
+         {isLoading ? (
+           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+             {Array.from({ length: 6 }).map((_, index) => (
+               <div key={index} className="bg-gray-500 bg-opacity-25 rounded-lg p-4">
+                 <div className="w-full h-64 bg-gray-300 rounded-md mb-2 animate-pulse"></div>
+                 <div className="h-6 bg-gray-300 rounded w-3/4 mb-2 animate-pulse"></div>
+                 <div className="h-4 bg-gray-300 rounded w-1/2 animate-pulse"></div>
+               </div>
+             ))}
+           </div>
+         ) : (
+           MemoizedContent
+         )}
+       </div>
+     </div>
+   );
+ }
