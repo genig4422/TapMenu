@@ -7,7 +7,7 @@ export default function KeAraTares(){
 
 
         const handleCall = () => {
-          window.location.href = "tel:+355697540908"; // Replace with your phone number
+          window.location.href = "tel:+355675886947"; // Replace with your phone number
         };
 
     return(
@@ -42,15 +42,20 @@ export default function KeAraTares(){
         <p className="text-2xl font-bold">Tap Menu</p>
         <div>
             <p className="py-2 ml-6 rounded-lg hidden px-5 bg-green-600 md:hidden inline-block">Shqip</p>
-            
+            <button
+                onClick={handleCall}
+                className="fixed w-80 bottom-4 z-50 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-lg md:hidden"
+            >
+                Porosit Online Tani
+            </button>
         </div>
     </div>
 
     <div className="relative w-full px-6 pt-8 md:pt-12 flex bg-opacity-25 bg-black h-64 md:items-end items-center">
         <div className="md:my-6 mx-1 md:mx-8 text-white">
-            <p className="text-5xl font-bold mb-2">Ke Ara Tares Restaurant</p>
+            <p className="text-5xl font-bold mb-2">Ke Ara Tares Agroturizem</p>
             <p className="md:text-xl text-lg">
-                Aty ku bashkohet Toka me Detin per tju sjelle specialitetin e rradhes.
+                  Ha mire te jetosh gjate!
             </p>
             <p className="text-lg mt-6 flex self-end font-semibold">Shkruani Review:</p>
         </div>

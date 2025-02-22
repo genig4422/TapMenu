@@ -34,7 +34,8 @@ export default function MenuWithFixedButton() {
         {price: "300L", name: "Brusketa",  image: "/kearatares/brusket.jpg",display:"buke e thekur me copa domatesh dhe majdanoz"},
         {price: "550L", name: "Rosto Vici",  image: "/kearatares/rosto.jpg",display:"me krem djathi parmixhano"},
         {price: "500L", name: "Vic me Peshk Ton",  image: "/kearatares/vic.jpg",display:"rosto vici me salce peshku ton"},
-        {price: "300L", name: "Antipaste Tradicionale",  image: "/kearatares/antipast.jpg",display:"antipaste ditore tradicionale shiptare dhe italiane per 2 persona"},
+        {price: "1200L", name: "Antipaste Tradicionale",  image: "/kearatares/antipast.jpg",display:"Antipaste tradicionale shqiptare dhe italiane per 2 persona"},
+        {price: "2400L", name: "Antipaste Tradicionale",  image: "/kearatares/antipast.jpg",display:"Antipaste tradicionale shqiptare dhe italiane per 4 persona"},
        
        
     ],
@@ -57,7 +58,7 @@ export default function MenuWithFixedButton() {
     ],
     Rizoto:[
         {price: "1.000L", name: "Rizoto Fruta Deti",  image: "/kearatares/frutadeti.jpg"},
-        {price: "900L", name: "Rizoto Karkalec Kungull",  image: "/kearatares/kungull.jpg"},
+        {price: "900L", name: "Rizoto Karkalec Kungull",  image: "/kearatares/rizoto-karkalec-kungulli.jpg"},
        
     ],
     Supat: [
@@ -80,8 +81,8 @@ export default function MenuWithFixedButton() {
       {price: "1.500L", name: "Eskallop Ala Milaneze",  image: "/kearatares/eskalopmilanez.jpg"},
       {price: "2.500L", name: "Pule Fshati Ne Furre",  image: "/kearatares/pilaf.jpg",display:"me oriz"},
       {price: "2.500L", name: "Pule Fshati Ne Furre",  image: "/kearatares/patatee.jpg",display:"me patate"},
-      {price: "2.500L", name: "Pule Fshati Ne Furre",  image: "/kearatares/ptaliatel.jpg",display:"me taliatele"},
-      {price: "2.500L", name: "Pule Fshati Ne Furre",  image: "/kearatares/me qull.jpg",display:"me qull me miell integral"},
+      {price: "2.500L", name: "Pule Fshati Ne Furre",  image: "/kearatares/ptaliatel.jpg",display:"me jufka"},
+      {price: "2.500L", name: "Pule Fshati Ne Furre",  image: "/kearatares/me qull.jpg",display:"qull me miell integral"},
       
     ],
     Embelsirat:[
@@ -159,7 +160,8 @@ export default function MenuWithFixedButton() {
       {price: "200L", name: "Peroni",  image: "/tokedhedet/s2/peroni.jpg"},
       {price: "250L", name: "Peroni Nastro Azzurro",  image: "/kearatares/roni.jpg"},
       {price: "300L", name: "Corona",  image: "/kearatares/rona.jpg"},
-      {price: "250L", name: "Peja",  image: "/kearatares/peja.jpg"},
+      {price: "300L", name: "Korca",  image: "/kearatares/korca-shishe.jpg"},
+      {price: "200L", name: "Peja",  image: "/kearatares/peja.jpg"},
       {price: "500L", name: "Artizanale Bionda",  image: "/kearatares/bionda.jpg"},
       {price: "500L", name: "Artizanale Rossa",  image: "/kearatares/rossa.jpg"},
 
@@ -170,7 +172,9 @@ export default function MenuWithFixedButton() {
       {price: "150L", name: "Bravo Molle",  image: "/kearatares/moll.jpg"},
       {price: "150L", name: "Bravo Luleshtrylle",  image: "/kearatares/lule.jpg"},
       {price: "150L", name: "Coca Cola",  image: "/tokedhedet/s2/coca-cola.jpg"},
-      {price: "150L", name: "Fanta",  image: "/tokedhedet/s2/fanta.jpg"},
+      {price: "150L", name: "Coca Cola 0 Sheqer",  image: "/kearatares/kola0.jpg"},
+      {price: "150L", name: "Fanta Portokall",  image: "/tokedhedet/s2/fanta.jpg"},
+      {price: "150L", name: "Fanta Ekzotik",  image: "/kearatares/ekzotik.png"},
       {price: "150L", name: "Limon Soda",  image: "/tokedhedet/s2/lemon-soda.jpg"},
       {price: "150L", name: "Orange Soda",  image: "/tokedhedet/s2/orange-soda.jpg"},
       {price: "150L", name: "Lipton",  image: "/tokedhedet/s2/lipton.jpg"},
@@ -184,7 +188,7 @@ export default function MenuWithFixedButton() {
       
     ],
     Kafe:[
-      {price: "100L", name: "Caj",  image: "/tokedhedet/s2/caj.jpg"},
+      {price: "100L", name: "Caj Limoni",  image: "/tokedhedet/s2/caj.jpg"},
       {price: "100L", name: "Espresso",  image: "/tokedhedet/s2/kafe.jpg"},
       {price: "150L", name: "Cacao",  image: "/tokedhedet/s2/kakao.jpg"},
       {price: "120L", name: "Cappuccino",  image: "/tokedhedet/s2/kapucino.jpg"},
