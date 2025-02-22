@@ -64,7 +64,7 @@ export default function KeAraTares(){
     <div className="relative w-full h-16 flex px-6 bg-opacity-25 bg-black">
         <div className="flex flex-col md:flex-row md:items-start text-center md:text-left">
             <div className="flex justify-center md:justify-start gap-4">
-                <a href="#"  rel="noopener noreferrer" className="px-5 rounded-xl md:py-2 flex items-center text-gray-700 bg-white">
+                <a href="https://g.page/r/CT9B1bEmLiAEEAE/review" rel="noopener noreferrer" className="px-5 rounded-xl md:py-2 flex items-center text-gray-700 bg-white">
                     <Image src="/google.png" alt="Google logo" className="mr-2" width={25} height={25} priority />
                     Google
                 </a>
@@ -74,7 +74,7 @@ export default function KeAraTares(){
                     Instagram
                 </a>
 
-                <a href="#"  rel="noopener noreferrer" className="px-5 rounded-xl py-2 flex items-center text-gray-700 bg-white">
+                <a href="https://www.tripadvisor.com/UserReviewEdit-g318866-d27924673-Ke_Ara_E_Tares_Agroturizem-Durres_Durres_County.html"  rel="noopener noreferrer" className="px-5 rounded-xl py-2 flex items-center text-gray-700 bg-white">
                     <Image src="/tripadvisor.png" alt="Trip Advisor logo" className="mr-2" width={25} height={25} priority />
                     Trip Advisor
                 </a>
