@@ -19,8 +19,8 @@ export default function MenuWithFixedButton() {
       {price: "800L", name: "Proshut Dhe Patate",  image: "/kearatares/patate.jpg"},
       {price: "700L", name: "Kerpudha",  image: "/kearatares/kerpudh.jpg"},
       {price: "1.000L", name: "Parma",  image: "/kearatares/parma.jpg",display:"proshute Parma,rukola,domate qershi,djathe parmixhano"},
-      {price: "800L", name: "Romana",  image: "/kearatares/romana.jpg",display:"sardele,ullinj,kaperi"},
-      {price: "1.100L", name: "Bologna",  image: "/kearatares/bologna.jpg",display:"mortadela,mocarele buallice,pistak"},
+      {price: "800L", name: "Romana",  image: "/kearatares/romana.jpg",display:" acuge,ullinj,kaperi"},
+      {price: "1.100L", name: "Bologna",  image: "/kearatares/bologna.jpg",display:"mortadela,mocarele bufalo,pistak"},
     ],
 
     Sallata:[
@@ -36,7 +36,10 @@ export default function MenuWithFixedButton() {
         {price: "500L", name: "Vic me Peshk Ton",  image: "/kearatares/vic.jpg",display:"rosto vici me salce peshku ton"},
         {price: "1200L", name: "Antipaste Tradicionale",  image: "/kearatares/antipast.jpg",display:"Antipaste tradicionale shqiptare dhe italiane per 2 persona"},
         {price: "2400L", name: "Antipaste Tradicionale",  image: "/kearatares/antipast.jpg",display:"Antipaste tradicionale shqiptare dhe italiane per 4 persona"},
-       
+        {price: "200", name: "Ajke Speci",  image: "/kearatares/ajke-speci.png"},
+        {price: "200", name: "Patate Fritte",  image: "/kearatares/patate-fritte.jpg"},
+        {price: "200", name: "Perime Zgare",  image: "/kearatares/perime-zgare.jpg"},
+        {price: "200", name: "Salce Kosi",  image: "/kearatares/salce_kosi.jpg"},
        
     ],
     Pasta:[
@@ -54,6 +57,7 @@ export default function MenuWithFixedButton() {
         {price: "800L", name: "Bucatini Ala Palermitana",  image: "/kearatares/sardele.jpg",display:"sardele,koper,stika,rrush i that"},
         {price: "1.000L", name: "Pakeri Salsice Dhe Bizele",  image: "/kearatares/bizele.jpg"},
         {price: "1.000L", name: "Pakeri Ala Genovese(Napolitana)",  image: "/kearatares/genovese.jpg",display:"mish vici i gatuar ne vere dhe qepe"},
+        
        
     ],
     Rizoto:[
@@ -64,7 +68,7 @@ export default function MenuWithFixedButton() {
     Supat: [
       { price: "300L", name: "Makarona Me Patate",  image: "/kearatares/sup.jpg" },
       { price: "300L", name: "Fasule",  image: "/kearatares/fasule.jpg" },
-      {price: "300L", name: "Pule Dhe Makarona Te Vogla" ,  image: "/kearatares/pule.jpg"},
+      { price: "300L", name: "Pule Dhe Makarona Te Vogla" ,  image: "/kearatares/pule.jpg"},
      
     ],
     Mish: [
@@ -106,10 +110,10 @@ export default function MenuWithFixedButton() {
       {price: "3.000L", name: "Suadens Rosso",  image: "/kearatares/suadens.jpg",display:"Rajoni:Campania,Italia e Jugut"},
       {price: "3.500L", name: "Antorino Primitivo",  image: "/kearatares/antorino.jpg",display:"Rajoni:Puglia,Itali"},
       {price: "1.600L", name: "Ducaminimo Montepulciano",  image: "/kearatares/montepulciano.jpg",display:"Rajoni:Villamagna,Itali"},
-      {price: "300L", name: "Bianco 0,25",  image: "/tokedhedet/s2/vere-gote.jpg",display:"vera e shpis"},
-      {price: "500L", name: "Bianco 0,5",  image: "/tokedhedet/s2/vere-kane.jpg",display:"vera e shpis"},
-      {price: "1.000L", name: "Bianco 1,00",  image: "/tokedhedet/s2/vere-kane.jpg",display:"vera e shpis"},
-      {price: "300L", name: "Rosso 0,25",  image: "/tokedhedet/s2/vere-gote.jpg",display:"vera e shpis"},
+      {price: "250L", name: "Bianco 0,25L",  image: "/kearatares/vere-gote-bardhe.jpg",display:"vera e shtepise"},
+      {price: "500L", name: "Bianco 0,5L",  image: "/kearatares/vere-gote-bardhe.jpg",display:"vera e shpis"},
+      {price: "1.000L", name: "Bianco 1L",  image: "/kearatares/vere-gote-bardhe.jpg",display:"vera e shpis"},
+      {price: "250L", name: "Rosso 0,25",  image: "/tokedhedet/s2/vere-gote.jpg",display:"vera e shpis"},
       {price: "500L", name: "Rosso 0,5",  image: "/tokedhedet/s2/vere-kane.jpg",display:"vera e shpis"},
       {price: "1.000L", name: "Rosso 1,00",  image: "/tokedhedet/s2/vere-kane.jpg",display:"vera e shpis"},
       
@@ -155,12 +159,12 @@ export default function MenuWithFixedButton() {
       {price: "300L", name: "Kriko Korca 0,5",  image: "/kearatares/0.3.jpg"},
       {price: "200L", name: "Kriko Veltins 0,25",  image: "/kearatares/0.5.jpg"},
       {price: "400L", name: "Kriko Veltins 0,5",  image: "/kearatares/0.3.jpg"},
-      {price: "300L", name: "Heniken",  image: "/tokedhedet/s2/heineken-alkol.jpg"},
+      {price: "250L", name: "Heniken",  image: "/tokedhedet/s2/heineken-alkol.jpg"},
       {price: "400L", name: "Paulaner Weizen",  image: "/tokedhedet/s2/paulaner.jpg"},
       {price: "200L", name: "Peroni",  image: "/tokedhedet/s2/peroni.jpg"},
       {price: "250L", name: "Peroni Nastro Azzurro",  image: "/kearatares/roni.jpg"},
       {price: "300L", name: "Corona",  image: "/kearatares/rona.jpg"},
-      {price: "300L", name: "Korca",  image: "/kearatares/korca-shishe.jpg"},
+      {price: "200L", name: "Korca",  image: "/kearatares/korca-shishe.jpg"},
       {price: "200L", name: "Peja",  image: "/kearatares/peja.jpg"},
       {price: "500L", name: "Artizanale Bionda",  image: "/kearatares/bionda.jpg"},
       {price: "500L", name: "Artizanale Rossa",  image: "/kearatares/rossa.jpg"},
@@ -177,14 +181,15 @@ export default function MenuWithFixedButton() {
       {price: "150L", name: "Fanta Ekzotik",  image: "/kearatares/ekzotik.png"},
       {price: "150L", name: "Limon Soda",  image: "/tokedhedet/s2/lemon-soda.jpg"},
       {price: "150L", name: "Orange Soda",  image: "/tokedhedet/s2/orange-soda.jpg"},
-      {price: "150L", name: "Lipton",  image: "/tokedhedet/s2/lipton.jpg"},
+      {price: "150L", name: "Lipton Pjeshke",  image: "/tokedhedet/s2/lipton.jpg"},
+      {price: "150L", name: "Lipton Limon",  image: "/kearatares/lipton-limon.png"},
       {price: "300L", name: "Red Bull",  image: "/tokedhedet/s2/red-bull.jpg"},
       {price: "150L", name: "Schweppes tonic",  image: "/tokedhedet/s2/sweps.jpg"},
       {price: "150L", name: "Sprite",  image: "/kearatares/sprite.jpg"},
       {price: "150L", name: "Crodino",  image: "/kearatares/crodino.jpg"},
       {price: "150L", name: "San Bitter",  image: "/kearatares/biter.jpg"},
-      {price: "100L", name: "Uje Lajthiza 0,3",  image: "/kearatares/ui.jpg"},
-      {price: "250L", name: "Uje Lajthiza 0,75",  image: "/tokedhedet/s2/uje-qelqi.png"},
+      {price: "100L", name: "Uje Lajthiza 0,3",  image: "/kearatares/uje-lajthiza03.jpg"},
+      {price: "250L", name: "Uje Lajthiza 0,75",  image: "/kearatares/uje-lajthiza03.jpg"},
       
     ],
     Kafe:[
