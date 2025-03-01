@@ -1,8 +1,9 @@
 "use client"
 import Image from "next/image";
-import MenuWithFixedButtons from "../components/kearatares/page";
+import MenuWithFixedButtons from "../../components/it/kearatares/page";
 import Head from "next/head";
-import LanguageSelector1 from "../components/languageselector1/page";
+import LanguageSelector from "@/app/components/languageselector/page";
+
 
 export default function KeAraTares(){
 
@@ -47,9 +48,10 @@ export default function KeAraTares(){
                 onClick={handleCall}
                 className="fixed w-80 bottom-4 z-50 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-lg md:hidden"
             >
-                Porosit Online Tani
+              Ordina online adesso
             </button>
-            <LanguageSelector1></LanguageSelector1>
+
+            <LanguageSelector></LanguageSelector>
         </div>
     </div>
 
@@ -57,9 +59,9 @@ export default function KeAraTares(){
         <div className="md:my-6 mx-1 md:mx-8 text-white">
             <p className="text-5xl font-bold mb-2">Ke Ara Tares Agroturizem</p>
             <p className="md:text-xl text-lg">
-                  Ha mire te jetosh gjate!
+                 Mangia bene e vivi a lungo!
             </p>
-            <p className="text-lg mt-6 flex self-end font-semibold">Shkruani Review:</p>
+            <p className="text-lg mt-6 flex self-end font-semibold">Scrivi una recensione:</p>
         </div>
     </div>
 

@@ -1,7 +1,32 @@
 "use client"
 import Image from "next/image";
 import MenuWithFixedButtons1 from "../components/tokedhedetmenu/page";
-import Head from "next/head";
+
+
+/* 
+export const metadata = {
+    title: "Toke & Det Restaurant Menu - Fresh Seafood & More",
+    description: "Shijoni një ndërthurje të shijeve të tokës dhe detit në Restorantin Toke & Det. Porosit online tani!",
+    openGraph: {
+        title: "Toke & Det Restaurant - Një shije e oqeanit",
+        description: "Shijoni një përvojë unike të ushqimit të detit ku toka takohet me detin.",
+        url: "https://tap-menu.vercel.app/tokedhedet",
+        siteName: "Tap Menu",
+        images: [
+            {
+                url: "https://yourwebsite.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Toke & Det Restaurant",
+            },
+        ],
+        type: "website",
+    },
+    alternates: {
+        canonical: "https://tap-menu.vercel.app/tokedhedet",
+    },
+};
+*/
 
 export default function TokeDheDet(){
 
@@ -12,18 +37,7 @@ export default function TokeDheDet(){
 
     return(
         <div >
-                <Head>
-                    <title>Toke & Det Restaurant Menu - Fresh Seafood & More</title>
-                    <meta name="description" content="Shijoni një ndërthurje të shijeve të tokës dhe detit në Restorantin Toke & Det. Porosit online tani!" />
-                    <meta property="og:title" content="Toke & Det Restaurant - Një shije e oqeanit" />
-                    <meta property="og:description" content="Shijoni një përvojë unike të ushqimit të detit ku toka takohet me detin." />
-                    <meta property="og:url" content="https://tap-menu.vercel.app/tokedhedet" />
-                    <meta property="og:site_name" content="Tap Menu" />
-                    <meta property="og:image" content="https://yourwebsite.com/og-image.jpg" />
-                    <meta property="og:type" content="website" />
-                    <meta name="canonical" content="https://tap-menu.vercel.app/tokedhedet" />
-                </Head>
-
+      
             {/*add the background photo*/}
             <div className="relative w-full ">
     {/* Video Background */}
