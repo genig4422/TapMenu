@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import MenuWithFixedButtons from "../../components/it/kearatares/page";
+import MenuWithFixedButtonsItalia from "../../components/it/kearatares/page";
 import Head from "next/head";
 import LanguageSelector from "@/app/components/languageselector/page";
 
@@ -88,7 +88,7 @@ export default function KeAraTares(){
     </div>
 </div>
 
-            <MenuWithFixedButtons></MenuWithFixedButtons>
+            <MenuWithFixedButtonsItalia></MenuWithFixedButtonsItalia>
 
 
 
