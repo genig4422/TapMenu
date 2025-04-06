@@ -36,10 +36,10 @@ export default function MenuWithFixedButtonItalia() {
         {price: "500L", name: "Panino al tonno",  image: "/kearatares/vic.jpg",display:"Arrosto di Manzo Con Salsa al Tonno"},
         {price: "1200L", name: "Antipasti tradizionali",  image: "/kearatares/antipast.jpg",display:"Antipasti Tradizionali Albanesi e Italiani Per 2 Persone"},
         {price: "2400L", name: "Antipasti tradizionali",  image: "/kearatares/antipast.jpg",display:"Antipasti Tradizionali Albanesi e Italiani Per 4 Persone"},
-        {price: "200", name: "Crema di peperoni",  image: "/kearatares/ajke-speci.png"},
-        {price: "200", name: "Patate fritte",  image: "/kearatares/patate-fritte.jpg"},
-        {price: "200", name: "Verdure grigliate",  image: "/kearatares/perime-zgare.jpg"},
-        {price: "200", name: "Salsa allo yogurt",  image: "/kearatares/salce_kosi.jpg"},
+        {price: "250L", name: "Crema di peperoni",  image: "/kearatares/ajke-speci.png"},
+        {price: "200L", name: "Patate fritte",  image: "/kearatares/patate-fritte.jpg"},
+        {price: "300L", name: "Verdure grigliate",  image: "/kearatares/perime-zgare.jpg"},
+        {price: "200L", name: "Salsa allo yogurt",  image: "/kearatares/salce_kosi.jpg"},
        
     ],
     Pasta:[

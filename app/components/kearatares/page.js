@@ -36,10 +36,10 @@ export default function MenuWithFixedButton() {
         {price: "500L", name: "Viç me Peshk Ton",  image: "/kearatares/vic.jpg",display:"Rosto Viçi me Salcë Peshku Ton"},
         {price: "1200L", name: "Antipastë Tradicionale",  image: "/kearatares/antipast.jpg",display:"Antipastë Tradicionale Shqiptare dhe Italiane per 2 Persona"},
         {price: "2400L", name: "Antipastë Tradicionale",  image: "/kearatares/antipast.jpg",display:"Antipastë Tradicionale Shqiptare dhe Italiane per 4 Persona"},
-        {price: "200", name: "Ajkë Speci",  image: "/kearatares/ajke-speci.png"},
-        {price: "200", name: "Patate Fritte",  image: "/kearatares/patate-fritte.jpg"},
-        {price: "200", name: "Perime Zgare",  image: "/kearatares/perime-zgare.jpg"},
-        {price: "200", name: "Salce Kosi",  image: "/kearatares/salce_kosi.jpg"},
+        {price: "250L", name: "Ajkë Speci",  image: "/kearatares/ajke-speci.png"},
+        {price: "200L", name: "Patate Fritte",  image: "/kearatares/patate-fritte.jpg"},
+        {price: "300L", name: "Perime Zgare",  image: "/kearatares/perime-zgare.jpg"},
+        {price: "200L", name: "Salce Kosi",  image: "/kearatares/salce_kosi.jpg"},
        
     ],
     Pasta:[

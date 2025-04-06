@@ -36,10 +36,10 @@ export default function MenuWithFixedButton() {
         {price: "500L", name: "Veal with tuna fish sauce",  image: "/kearatares/vic.jpg",display:"Roast Beef With Funa Fish Sauce"},
         {price: "1200L", name: "Traditional Antipasti",  image: "/kearatares/antipast.jpg",display:"Traditional Albanian and Italian Antipasti for 2 People"},
         {price: "2400L", name: "Traditional Antipasti",  image: "/kearatares/antipast.jpg",display:"Traditional Albanian and Italian Antipasti for 4 People"},
-        {price: "200", name: "Pepper Cream",  image: "/kearatares/ajke-speci.png"},
-        {price: "200", name: "French Fries",  image: "/kearatares/patate-fritte.jpg"},
-        {price: "200", name: "Grilled Vegetables",  image: "/kearatares/perime-zgare.jpg"},
-        {price: "200", name: "Yogurt Sauce",  image: "/kearatares/salce_kosi.jpg"},
+        {price: "250L", name: "Pepper Cream",  image: "/kearatares/ajke-speci.png"},
+        {price: "200L", name: "French Fries",  image: "/kearatares/patate-fritte.jpg"},
+        {price: "300L", name: "Grilled Vegetables",  image: "/kearatares/perime-zgare.jpg"},
+        {price: "200L", name: "Yogurt Sauce",  image: "/kearatares/salce_kosi.jpg"},
        
     ],
     Pasta:[
