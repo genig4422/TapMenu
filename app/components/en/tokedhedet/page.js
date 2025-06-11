@@ -2,21 +2,21 @@
 import { useState, useEffect } from "react";
 
 export default function MenuWithFixedButtonsOnline() {
-  const categories = ["Supa","Sallata","Antipasta","Pasta","Rizoto","Peshk", "Mish", "Verat","Alkolike","Birra","Pije","Kafe"];
+  const categories = ["Soup","Salad","Starters","Pasta","Risotto","Fish", "Meat", "Wines","Alcohol","Beers","Drinks","Coffe"];
  
 
   const content = {
    
-    Supa:[
+    Soup:[
         {price: "250L", name: "Vegetable Soup",  image: "/tokedhedet/Supe-me-perime.jpg"},
         {price: "300L", name: "Chicken Soup",  image: "/tokedhedet/supe-pule.jpg"},
         {price: "300L", name: "Fish Soup",  image: "/tokedhedet/supe-peshku.jpg"}
     ],
-    Sallata:[
+    Salad:[
         {price: "200L", name: "Green Salad",  image: "/tokedhedet/sallate-jeshile.jpg"},
         {price: "350L", name: "Village Salad",  image: "/tokedhedet/sallate-fshati.jpg"}
     ],
-    Antipasta:[
+    Starters:[
         {price: "1000L", name: "Octopus Salad",  image: "/tokedhedet/sallate-oktapod.jpg"},
         {price: "300L", name: "Cheese",  image: "/tokedhedet/djath.jpg"},
         {price: "300L", name: "Bruschetta",  image: "/tokedhedet/Supe-me-perime.jpg"},
@@ -35,12 +35,12 @@ export default function MenuWithFixedButtonsOnline() {
         {price: "400L", name: "Tuna & Olive Pene",  image: "/tokedhedet/pene-ton-ullinj.jpg"},
         {price: "500L", name: "Beef Penne Ragu",  image: "/tokedhedet/pene-ton-ullinj.jpg"}
     ],
-    Rizoto:[
+    Risotto:[
         {price: "500L", name: "Seafood Risotto",  image: "/tokedhedet/rizoto-fruta-deti.jpg"},
         {price: "600L", name: "Shrimp Pumpkin Risotto",  image: "/tokedhedet/rizoto-karkalec-kungull.jpg"},
         {price: "400L", name: "Vegetable Risotto",  image: "/tokedhedet/rizoto-perime.jpg"}
     ],
-    Peshk: [
+    Fish: [
       { price: "800L", name: "Grilled Sea Bass 350 - 450 gr",  image: "/tokedhedet/levrek-zgare.jpg" },
       { price: "750L", name: "Grilled Seabream Fish 350 - 450 gr",  image: "/tokedhedet/koc-zgare.jpg" },
       {price: "2400L", name: "Grilled Shrimp 1 kg" ,  image: "/tokedhedet/karkalec-zgare.jpg"},
@@ -48,14 +48,14 @@ export default function MenuWithFixedButtonsOnline() {
       {price: "1000L", name: "Grilled Octopus",  image: "/tokedhedet/oktapod-zgare.jpg"},
       {price: "2400L", name: "Grilled Mix 1 kg",  image: "/tokedhedet/mix-zgare.jpg"}
     ],
-    Mish: [
+    Meat: [
       { price: "2400L", name: "Lamb ribs 1 kg",  image: "/tokedhedet/Brinje-qingji.jpg" },
       { price: "750L", name: "Beef Steak",  image: "/tokedhedet/biftek-vici.jpg" },
       {price: "600L", name: "Chicken Cutlets",  image: "/tokedhedet/kotoleta-pule.jpg"},
       {price: "2500L", name: "Chicken with Jufka",  image: "/tokedhedet/pule-jufka.jpg"},
       {price: "2500L", name: "Chicken with Rice",  image: "/tokedhedet/pule-pilaf.jpg"}
     ],
-    Verat: [
+    Wines: [
       { price: "1300L", name: "Aleksandria e Bardhe", image: "/tokedhedet/s2/aleksiandra-bardhe.png" },
       {price: "1600L", name: "Mulleer Thrugau",  image: "/tokedhedet/s2/muller-thurgau.jpg"},
       {price: "1400L", name: "Pinot Grigio",  image: "/tokedhedet/s2/pinot-grigio.jpg"},
@@ -69,7 +69,7 @@ export default function MenuWithFixedButtonsOnline() {
       
     ],
 
-    Alkolike:[
+    Alcohol:[
       {price: "300L", name: "Bacardi",  image: "/tokedhedet/s2/bacardi.png"},
       {price: "250L", name: "Branca",  image: "/tokedhedet/s2/branca.jpg"},
       {price: "400L", name: "Chivas",  image: "/tokedhedet/s2/chivas.jpg"},
@@ -87,7 +87,7 @@ export default function MenuWithFixedButtonsOnline() {
       {price: "300L", name: "Vodka",  image: "/tokedhedet/s2/vodka.png"},
     ],
 
-    Birra:[
+    Beers:[
       {price: "250L", name: "Bavaria without alcohol",  image: "/tokedhedet/s2/bavaria.jpg"},
       {price: "150L", name: "Elbar",  image: "/tokedhedet/s2/elbar.jpg"},
       {price: "300L", name: "Heniken 0.0",  image: "/tokedhedet/s2/heineken.jpg"},
@@ -96,7 +96,7 @@ export default function MenuWithFixedButtonsOnline() {
       {price: "180L", name: "Peroni",  image: "/tokedhedet/s2/peroni.jpg"},
     ],
 
-    Pije: [
+    Drinks: [
       {price: "150L", name: "B52",  image: "/tokedhedet/s2/b52.jpg"},
       {price: "150L", name: "Bravo",  image: "/tokedhedet/s2/bravo.jpg"},
       {price: "150L", name: "Coca Cola",  image: "/tokedhedet/s2/coca-cola.jpg"},
@@ -113,7 +113,7 @@ export default function MenuWithFixedButtonsOnline() {
       {price: "200L", name: "Uje me shishe Qelqi",  image: "/tokedhedet/s2/uje-qelqi.png"},
       {price: "130L", name: "Uje Vitamina",  image: "/tokedhedet/s2/uje-vitamina.jpg"},
     ],
-    Kafe:[
+    Coffe:[
       {price: "60L", name: "Tea",  image: "/tokedhedet/s2/caj.jpg"},
       {price: "150L", name: "Hot chocolate",  image: "/tokedhedet/s2/cokollat.jpg"},
       {price: "60L", name: "Coffee",  image: "/tokedhedet/s2/kafe.jpg"},
