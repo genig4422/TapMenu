@@ -1,15 +1,14 @@
 "use client"
 import Image from "next/image";
+import LanguageSelector from "../components/languageselectionAL/page";
 import MenuWithFixedButtons from "../components/tokedhedetmenu1/page";
 import Head from "next/head";
+
 
 export default function TokeDheDet1(){
 
 
-        const handleCall = () => {
-          window.location.href = "tel:+355697540908"; // Replace with your phone number
-        };
-
+   
     return(
         <div >
                 <Head>
@@ -42,7 +41,7 @@ export default function TokeDheDet1(){
         <p className="text-2xl font-bold">Tap Menu</p>
         <div>
             <p className="py-2 ml-6 rounded-lg hidden px-5 bg-green-600 md:hidden inline-block">Shqip</p>
-            
+            <LanguageSelector></LanguageSelector>
         </div>
     </div>
 

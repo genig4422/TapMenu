@@ -8,7 +8,7 @@ export default function MenuWithFixedButtonsOnline() {
   const content = {
    
     Supa:[
-        {price: "250L", name: "Supe me Perime",  image: "/tokedhedet/Supe-me-perime.jpg"},
+        {price: "250L", name: "Vegetable Soup",  image: "/tokedhedet/Supe-me-perime.jpg"},
         {price: "300L", name: "Supe Pule",  image: "/tokedhedet/supe-pule.jpg"},
         {price: "300L", name: "Supe Peshku",  image: "/tokedhedet/supe-peshku.jpg"}
     ],
