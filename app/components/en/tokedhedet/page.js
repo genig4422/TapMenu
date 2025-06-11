@@ -9,50 +9,51 @@ export default function MenuWithFixedButtonsOnline() {
    
     Supa:[
         {price: "250L", name: "Vegetable Soup",  image: "/tokedhedet/Supe-me-perime.jpg"},
-        {price: "300L", name: "Supe Pule",  image: "/tokedhedet/supe-pule.jpg"},
-        {price: "300L", name: "Supe Peshku",  image: "/tokedhedet/supe-peshku.jpg"}
+        {price: "300L", name: "Chicken Soup",  image: "/tokedhedet/supe-pule.jpg"},
+        {price: "300L", name: "Fish Soup",  image: "/tokedhedet/supe-peshku.jpg"}
     ],
     Sallata:[
-        {price: "200L", name: "Sallate Jeshile",  image: "/tokedhedet/sallate-jeshile.jpg"},
-        {price: "350L", name: "Sallate Fshati",  image: "/tokedhedet/sallate-fshati.jpg"}
+        {price: "200L", name: "Green Salad",  image: "/tokedhedet/sallate-jeshile.jpg"},
+        {price: "350L", name: "Village Salad",  image: "/tokedhedet/sallate-fshati.jpg"}
     ],
     Antipasta:[
-        {price: "1000L", name: "Sallate Oktapodi",  image: "/tokedhedet/sallate-oktapod.jpg"},
-        {price: "300L", name: "Djath",  image: "/tokedhedet/djath.jpg"},
-        {price: "300L", name: "Brusketa",  image: "/tokedhedet/Supe-me-perime.jpg"},
-        {price: "550L", name: "Karkalec Pana",  image: "/tokedhedet/brusketa.jpg"},
-        {price: "200L", name: "Patate te Skuqura",  image: "/tokedhedet/patate-te-skuqura.jpg"},
-        {price: "2400L", name: "Karkalec Friture 1 kg",  image: "/tokedhedet/karkalec-friture].jpg"},
-        {price: "2400L", name: "Kallamar Friture 1 kg",  image: "/tokedhedet/kallamar-friture.jpg"},
-        {price: "2400L", name: "Mix Fritur 1 kg",  image: "/tokedhedet/mix-friture.jpg"}
+        {price: "1000L", name: "Octopus Salad",  image: "/tokedhedet/sallate-oktapod.jpg"},
+        {price: "300L", name: "Cheese",  image: "/tokedhedet/djath.jpg"},
+        {price: "300L", name: "Bruschetta",  image: "/tokedhedet/Supe-me-perime.jpg"},
+        {price: "550L", name: "Shrimp Pana",  image: "/tokedhedet/brusketa.jpg"},
+        {price: "200L", name: "French Fries",  image: "/tokedhedet/patate-te-skuqura.jpg"},
+        {price: "2400L", name: "Fried Shrimp 1 kg",  image: "/tokedhedet/karkalec-friture].jpg"},
+        {price: "2400L", name: "Fried Squid 1 kg",  image: "/tokedhedet/kallamar-friture.jpg"},
+        {price: "2400L", name: "Fried Mix 1 kg",  image: "/tokedhedet/mix-friture.jpg"}
     ],
     Pasta:[
         {price: "300L", name: "Aglio Olio Peperonchino",  image: "/tokedhedet/pene-ton-ullinj.jpg"},
-        {price: "500L", name: "Linguini Fruta Deti",  image: "/tokedhedet/linguini-fruta-deti.jpg"},
-        {price: "600L", name: "Linguini Karkalec Kungull",  image: "/tokedhedet/linguini-karkalec-kungull.jpg"},
+        {price: "500L", name: "Seafood Linguini",  image: "/tokedhedet/linguini-fruta-deti.jpg"},
+        {price: "600L", name: "Shrimp Pumpkin Linguine",  image: "/tokedhedet/linguini-karkalec-kungull.jpg"},
+        {price: "600L", name: "Shrimp Pumpkin Pana Linguine",  image: "/tokedhedet/linguini-karkalec-kungull.jpg"},
         {price: "350L", name: "Pene Arabiata",  image: "/tokedhedet/pene-arabiata.jpg"},
-        {price: "400L", name: "Pene Ton & Ullinj",  image: "/tokedhedet/pene-ton-ullinj.jpg"},
-        {price: "500L", name: "Pene Ragu",  image: "/tokedhedet/pene-ton-ullinj.jpg"}
+        {price: "400L", name: "Tuna & Olive Pene",  image: "/tokedhedet/pene-ton-ullinj.jpg"},
+        {price: "500L", name: "Beef Penne Ragu",  image: "/tokedhedet/pene-ton-ullinj.jpg"}
     ],
     Rizoto:[
-        {price: "500L", name: "Rizoto Fruta Deti",  image: "/tokedhedet/rizoto-fruta-deti.jpg"},
-        {price: "600L", name: "Rizoto Karkalec Kungull",  image: "/tokedhedet/rizoto-karkalec-kungull.jpg"},
-        {price: "400L", name: "Rizoto Perime",  image: "/tokedhedet/rizoto-perime.jpg"}
+        {price: "500L", name: "Seafood Risotto",  image: "/tokedhedet/rizoto-fruta-deti.jpg"},
+        {price: "600L", name: "Shrimp Pumpkin Risotto",  image: "/tokedhedet/rizoto-karkalec-kungull.jpg"},
+        {price: "400L", name: "Vegetable Risotto",  image: "/tokedhedet/rizoto-perime.jpg"}
     ],
     Peshk: [
-      { price: "800L", name: "Levrek Zgare 350 - 450 gr",  image: "/tokedhedet/levrek-zgare.jpg" },
-      { price: "750L", name: "Koce Zgare 350 - 450 gr",  image: "/tokedhedet/koc-zgare.jpg" },
-      {price: "2400L", name: "Karkalec Zgare 1 kg" ,  image: "/tokedhedet/karkalec-zgare.jpg"},
-      {price: "2400L", name: "Kallamar Zgare 1 kg",  image: "/tokedhedet/kallamar-zgare.png"},
-      {price: "1000L", name: "Oktapod Zgare",  image: "/tokedhedet/oktapod-zgare.jpg"},
-      {price: "2400L", name: "Mix Zgare 1 kg",  image: "/tokedhedet/mix-zgare.jpg"}
+      { price: "800L", name: "Grilled Sea Bass 350 - 450 gr",  image: "/tokedhedet/levrek-zgare.jpg" },
+      { price: "750L", name: "Grilled Seabream Fish 350 - 450 gr",  image: "/tokedhedet/koc-zgare.jpg" },
+      {price: "2400L", name: "Grilled Shrimp 1 kg" ,  image: "/tokedhedet/karkalec-zgare.jpg"},
+      {price: "2400L", name: "Grilled Squid 1 kg",  image: "/tokedhedet/kallamar-zgare.png"},
+      {price: "1000L", name: "Grilled Octopus",  image: "/tokedhedet/oktapod-zgare.jpg"},
+      {price: "2400L", name: "Grilled Mix 1 kg",  image: "/tokedhedet/mix-zgare.jpg"}
     ],
     Mish: [
-      { price: "2400L", name: "Brinje Qingji 1 kg",  image: "/tokedhedet/Brinje-qingji.jpg" },
-      { price: "750L", name: "Biftek Viçi",  image: "/tokedhedet/biftek-vici.jpg" },
-      {price: "600L", name: "Pule Kotolet",  image: "/tokedhedet/kotoleta-pule.jpg"},
-      {price: "2500L", name: "Pule me Jufka",  image: "/tokedhedet/pule-jufka.jpg"},
-      {price: "2500L", name: "Pule me Pilaf",  image: "/tokedhedet/pule-pilaf.jpg"}
+      { price: "2400L", name: "Lamb ribs 1 kg",  image: "/tokedhedet/Brinje-qingji.jpg" },
+      { price: "750L", name: "Beef Steak",  image: "/tokedhedet/biftek-vici.jpg" },
+      {price: "600L", name: "Chicken Cutlets",  image: "/tokedhedet/kotoleta-pule.jpg"},
+      {price: "2500L", name: "Chicken with Jufka",  image: "/tokedhedet/pule-jufka.jpg"},
+      {price: "2500L", name: "Chicken with Rice",  image: "/tokedhedet/pule-pilaf.jpg"}
     ],
     Verat: [
       { price: "1300L", name: "Aleksandria e Bardhe", image: "/tokedhedet/s2/aleksiandra-bardhe.png" },
@@ -87,7 +88,7 @@ export default function MenuWithFixedButtonsOnline() {
     ],
 
     Birra:[
-      {price: "250L", name: "Bavaria pa alkol",  image: "/tokedhedet/s2/bavaria.jpg"},
+      {price: "250L", name: "Bavaria without alcohol",  image: "/tokedhedet/s2/bavaria.jpg"},
       {price: "150L", name: "Elbar",  image: "/tokedhedet/s2/elbar.jpg"},
       {price: "300L", name: "Heniken 0.0",  image: "/tokedhedet/s2/heineken.jpg"},
       {price: "250L", name: "Heniken",  image: "/tokedhedet/s2/heineken-alkol.jpg"},
@@ -113,13 +114,13 @@ export default function MenuWithFixedButtonsOnline() {
       {price: "130L", name: "Uje Vitamina",  image: "/tokedhedet/s2/uje-vitamina.jpg"},
     ],
     Kafe:[
-      {price: "60L", name: "Caj",  image: "/tokedhedet/s2/caj.jpg"},
-      {price: "150L", name: "Cokollate e ngrohte",  image: "/tokedhedet/s2/cokollat.jpg"},
-      {price: "60L", name: "Kafe",  image: "/tokedhedet/s2/kafe.jpg"},
-      {price: "150L", name: "Kakao",  image: "/tokedhedet/s2/kakao.jpg"},
-      {price: "150L", name: "Kapucino",  image: "/tokedhedet/s2/kapucino.jpg"},
-      {price: "150L", name: "Kapucino Bustine",  image: "/tokedhedet/s2/kapucino.jpg"},
-      {price: "70L", name: "Makiato",  image: "/tokedhedet/s2/makjato.jpg"},
+      {price: "60L", name: "Tea",  image: "/tokedhedet/s2/caj.jpg"},
+      {price: "150L", name: "Hot chocolate",  image: "/tokedhedet/s2/cokollat.jpg"},
+      {price: "60L", name: "Coffee",  image: "/tokedhedet/s2/kafe.jpg"},
+      {price: "150L", name: "Cocoa",  image: "/tokedhedet/s2/kakao.jpg"},
+      {price: "150L", name: "Cappuccino",  image: "/tokedhedet/s2/kapucino.jpg"},
+      {price: "150L", name: "Cappuccino Bustine",  image: "/tokedhedet/s2/kapucino.jpg"},
+      {price: "70L", name: "Macchiato",  image: "/tokedhedet/s2/makjato.jpg"},
       {price: "150L", name: "Salep",  image: "/tokedhedet/s2/salep.jpg"},
     ]
   };
